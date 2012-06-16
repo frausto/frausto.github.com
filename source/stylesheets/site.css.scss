@@ -1,4 +1,6 @@
 @import "compass";
+@import "navigation.css.scss";
+@import "main.css.scss";
 
 $link-color:         #0388a6;
 $link-hover-color:   #009ce0;
@@ -19,14 +21,22 @@ $side-gutter-width: $gutter-width;
 @include global-reset;
 
 body {
-  font-family: $font-family;
-  color: $font-color; 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #444;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+
+.shadow {
+  box-shadow: 0px 2px 5px #CCC;
+  -webkit-box-shadow: 0px 2px 5px #CCC;
+  -moz-box-shadow: 5px 2px 5px #CCC;
 }
 
 a {
   @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
-}
-
-#main {
-  padding: 50px;
 }

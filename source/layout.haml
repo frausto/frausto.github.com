@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+    = stylesheet_link_tag "site.css"
+  %body{:class => page_classes}
+    #navigation
+      .nav_item.header
+        %span.bracket {
+        %span.headline frausto llc
+        %span.bracket }
+        %h3 it consultancy focused on agile development and custom web apps
+      .nav_item
+        Home
+      .nav_item
+        Portfolio
+      .nav_item
+        Blog
+      .nav_item
+        About
+      .nav_item
+        Contact
+
+    %div{:id => "main", :role => "main"}
+      = yield
+      

@@ -1,0 +1,23 @@
+#main{
+
+  display: inline-block;
+  margin: 20px 0 10px 50px;
+  width: 600px;
+  float: left;
+  padding: 20px 0 0 50px;
+
+  .headline {
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  p{
+    margin-bottom: 20px;
+    .first_word{
+      font-size: 25px;
+    }
+  }
+
+}
