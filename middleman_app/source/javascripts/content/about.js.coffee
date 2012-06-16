@@ -16,7 +16,7 @@ class window.AboutPage
     nav_links = @nav_links
     original_width = @original_width
 
-    @navigation.find("#mypic").fadeOut('slow', ->
+    @navigation.find("#mypic").fadeOut('fast', ->
       $(this).remove()
       nav_links.animate({"width": original_width}, "slow")
     )

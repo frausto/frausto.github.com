@@ -15,9 +15,9 @@ load_page = (page_name) ->
         main.empty()
         main.append "<div class=\"headline\"><p>EGHAD!</p><p>We could not find the \"" + page_name + "\" page!</p></div>"
       success: (data, textStatus, jqXHR) ->
+        page_class(current_page).unload()
         main.fadeOut('fast', ->
           main.empty()
-          page_class(current_page).unload()
           main.append data
           page_class(page_name).load()
           current_page = page_name
