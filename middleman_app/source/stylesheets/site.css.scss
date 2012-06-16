@@ -39,5 +39,15 @@ a {
   @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
 }
 
+p{
+  margin-bottom: 20px;
+}
+  
+h3 {
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 20px;
+}
+
 @import "navigation.css.scss";
 @import "main.css.scss";
