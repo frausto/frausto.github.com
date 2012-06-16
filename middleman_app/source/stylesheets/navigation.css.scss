@@ -1,4 +1,19 @@
 #navigation{
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover { 
+    background-color: #f1f1f1; 
+  }
+
+  a:target{
+    background-color: #444;
+    color: white;
+  }
+
+
+
   width: 250px;
   top: 50px;
   float: left;
@@ -10,6 +25,7 @@
     margin: 0px 10px 10px 0;
     padding: 15px;
     background-color: #CAE8EA;
+    display: block;
   }
 
   .header{
@@ -17,6 +33,7 @@
     color: white;
     margin-bottom: 25px;
     height: 100px;
+    cursor: default;
   }
 
   .bracket {

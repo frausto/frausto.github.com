@@ -1,6 +1,4 @@
 @import "compass";
-@import "navigation.css.scss";
-@import "main.css.scss";
 
 $link-color:         #0388a6;
 $link-hover-color:   #009ce0;
@@ -40,3 +38,6 @@ body {
 a {
   @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
 }
+
+@import "navigation.css.scss";
+@import "main.css.scss";

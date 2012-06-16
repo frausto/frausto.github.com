@@ -33,7 +33,7 @@ end
 # Per-page layout changes:
 # 
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "/*", :layout => false
 # 
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
