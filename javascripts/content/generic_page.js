@@ -1,0 +1,1 @@
+((function(){window.GenericPage=function(){function a(){}return a.load=function(){},a.unload=function(){},a}()})).call(this);

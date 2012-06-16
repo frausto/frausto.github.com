@@ -11,11 +11,12 @@
         %span.headline frausto llc
         %span.bracket }
         %h3 it consultancy focused on agile development and custom web apps
-      = link_to "Home", "#home", :class => "nav_item", :id => "home"
-      = link_to "Portfolio", "#portfolio", :class => "nav_item", :id => "portfolio"
-      = link_to "Blog", "#blog", :class => "nav_item", :id => "blog"
-      = link_to "About", "#about", :class => "nav_item", :id => "about"
-      = link_to "Contact", "#contact", :class => "nav_item", :id => "contact"
+      #site_links
+        = link_to "Home", "#home", :class => "nav_item nav_link", :id => "home"
+        = link_to "Portfolio", "#portfolio", :class => "nav_item nav_link", :id => "portfolio"
+        = link_to "Blog", "#blog", :class => "nav_item nav_link", :id => "blog"
+        = link_to "About", "#about", :class => "nav_item nav_link", :id => "about"
+        = link_to "Contact", "#contact", :class => "nav_item nav_link", :id => "contact"
 
     %div{:id => "main", :role => "main"}
   = javascript_include_tag "app.js"
