@@ -37,6 +37,7 @@ body {
 
 a {
   @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
+  text-decoration: none;
 }
 
 p{
@@ -51,4 +52,5 @@ h3 {
 
 @import "navigation.css.scss";
 @import "main.css.scss";
-@import "about.css.scss";
+@import "content/about.css.scss";
+@import "content/contact.css.scss";

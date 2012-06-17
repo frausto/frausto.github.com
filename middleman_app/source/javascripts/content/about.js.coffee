@@ -7,7 +7,7 @@ class window.AboutPage
   @load: ->
     navigation = @navigation
     @nav_links.animate({"width": "100px"}, "slow").promise().done( ->
-      image_tag = $('<img id="mypic" width="210" src="/images/me.png">').hide()
+      image_tag = $('<img id="mypic" width="210" src="/images/me.png">')
       navigation.append(image_tag)
       image_tag.fadeIn("slow")
     )
