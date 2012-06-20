@@ -1,1 +1,0 @@
-((function(){window.load_page=function(a){var b,c;return b=$("#main"),c="/content/"+a+".html",b.empty(),$.ajax(c,{type:"GET",dataType:"html",error:function(c,d,e){return b.append('<div class="headline"><p>EGHAD!</p><p>We could not find the "'+a+'" page!</p></div>')},success:function(a,c,d){return b.append(a)}})}})).call(this);

@@ -6,17 +6,19 @@ class window.AboutPage
 
   @load: ->
     navigation = @navigation
-    @nav_links.animate({"width": "100px"}, "slow").promise().done( ->
-      image_tag = $('<img id="mypic" width="210" src="/images/me.png">')
-      navigation.append(image_tag)
-      image_tag.fadeIn("slow")
-    )
+    @nav_links.animate({"width": "100px"}, "slow")
+    image_tag = $('<img id="mypic" width="210" src="/images/me.png">')
+    image_tag.css('position', 'absolute')
+    image_tag.css('display', 'none')
+    navigation.append(image_tag)
+    image_tag.fadeIn('slow')
+    
 
   @unload: ->
     nav_links = @nav_links
     original_width = @original_width
-
-    @navigation.find("#mypic").fadeOut('fast', ->
-      $(this).remove()
-      nav_links.animate({"width": original_width}, "slow")
+    pic = @navigation.find("#mypic")
+    nav_links.animate({"width": original_width}, "slow", ->
+      pic.remove()
     )
+    pic.fadeOut('slow')
