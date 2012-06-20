@@ -2,6 +2,7 @@
 #= require_tree .
 
 current_page = ""
+all_links = ['#home', '#portfolio', '#blog', '#about', '#contact']
 
 load_page = (page_name) ->
   return if current_page == page_name
@@ -13,7 +14,7 @@ load_page = (page_name) ->
       dataType: 'html'
       error: (jqXHR, textStatus, errorThrown) ->
         main.empty()
-        main.append "<div class=\"headline\"><p>EGHAD!</p><p>We could not find the \"" + page_name + "\" page!</p></div>"
+        main.append "<div class=\"headline\"><p>EGHAD!</p><p>There seems to be a problem loading the \"" + page_name + "\" page!</p></div>"
       success: (data, textStatus, jqXHR) ->
         page_class(current_page).unload()
         main.fadeOut('fast', ->
@@ -24,14 +25,16 @@ load_page = (page_name) ->
           main.fadeIn('fast')
         )
 
-for hash_tag in ['#home', '#portfolio', '#blog', '#about', '#contact']
+for hash_tag in all_links
   $(hash_tag).bind 'click', {hash_tag: hash_tag}, (event) =>
     event.preventDefault()
     window.location.hash = event.data.hash_tag
     load_page(event.data.hash_tag.replace("#", ""))
+    false
 
 page_class = (page_name) ->
   return AboutPage if page_name == "about"
+  return new PortfolioPage if page_name == "portfolio"
   GenericPage
 
 

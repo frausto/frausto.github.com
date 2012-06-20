@@ -1,0 +1,86 @@
+#portfolio{
+
+  #chooser{
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    display: inline-block;
+
+    .option{
+      display: inline-block;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      background-color: #CAE8EA;
+      height: 20px;
+      width: 20px;
+      margin:5px;
+    }
+
+    .current{
+      background-color: #444;
+    }
+
+    #left_click, #right_click{
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 0 5px 0 5px;
+    }
+
+    #left_click{
+      float: left;
+    }
+
+    #right_click{
+      float: right;
+    }
+
+    .choice {
+      font-weight: bold;
+      display: inline-block;
+      display: none;
+
+    }
+  }
+
+  .description{
+    display: inline-block;
+    float: right;
+    max-width: 390px;
+  }
+
+  #main{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .preview {
+    img{ border: 10px solid #444;}
+    cursor: pointer;
+    height: 437px;
+    width: 570px;
+  }
+
+  .title{
+    background-color: #444;
+    color: white;
+    width: 200px;
+    border-radius: 115px 115px 0 0;
+    -webkit-border-radius: 115px 115px 0 0;
+    -moz-border-radius: 115px 115px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px 0 0 0;
+
+
+    .sub{
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  .hidden {
+    display: none
+  }
+}
