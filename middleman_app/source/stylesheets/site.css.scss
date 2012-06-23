@@ -50,6 +50,10 @@ h3 {
   margin-top: 20px;
 }
 
+#hidden_images{
+  display: none;
+}
+
 @import "navigation.css.scss";
 @import "main.css.scss";
 @import "content/about.css.scss";
