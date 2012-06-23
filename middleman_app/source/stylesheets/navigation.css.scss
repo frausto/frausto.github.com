@@ -7,11 +7,6 @@
     background-color: #f1f1f1; 
   }
 
-  a:target{
-    background-color: #444;
-    color: white;
-  }
-
   width: 350px;
   float: left;
   padding: 20px 10px 10px 0;
@@ -48,5 +43,14 @@
     font-size: 32px;
     font-weight: lighter;
     text-transform: uppercase;
+  }
+
+  .target{
+    background-color: #444;
+    color: white;
+  }
+
+  .target:hover{
+    background-color: #444; 
   }
 }

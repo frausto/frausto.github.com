@@ -2,12 +2,14 @@
 #= require_tree .
 
 current_page = ""
-all_links = ['#home', '#portfolio', '#blog', '#about', '#contact']
+all_links = ['#home_link', '#portfolio_link', '#blog_link', '#about_link', '#contact_link']
 
 load_page = (page_name) ->
   return if current_page == page_name
   main = $("#main")
   url = "/content/" + page_name + ".html"
+  $(".target").removeClass("target")
+  $("#" + page_name + "_link").addClass("target")
 
   $.ajax url,
       type: 'GET'
@@ -28,8 +30,9 @@ load_page = (page_name) ->
 for hash_tag in all_links
   $(hash_tag).bind 'click', {hash_tag: hash_tag}, (event) =>
     event.preventDefault()
-    window.location.hash = event.data.hash_tag
-    load_page(event.data.hash_tag.replace("#", ""))
+    hash_tag = event.data.hash_tag.replace("_link", "")
+    window.location.hash = hash_tag
+    load_page(hash_tag.replace("#", ""))
     false
 
 page_class = (page_name) ->
