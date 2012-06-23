@@ -7,25 +7,25 @@
     #chooser
       #left_click &larr;
       #right_click &rarr;
-      #fraustollc_choice.option.current
-      #bgov_choice.option
+      #bgov_choice.option.current
+      #fraustollc_choice.option
       #director_choice.option
 
-    .fraustollc.description
+    .fraustollc.description.hidden
       FraustoLLC is the site you're on right now. It is a static site, made using <a href="http://haml.info/" target="_blank">haml</a>, <a href="http://coffeescript.org/" target="_blank">coffeescript</a>, and <a href="http://sass-lang.com/" target="_blank">sass</a>. You can view the source code at <a href="https://github.com/frausto/frausto.github.com" target="_blank">github</a>.
 
-    .bgov.description.hidden
+    .bgov.description
       Bgov.com is a <a href="http://rubyonrails.org/">Rails</a> app run by <a href="http://en.wikipedia.org/wiki/Bloomberg_L.P.">Bloomberg</a> dedicated to organizing government data including but not limited to news, grants, contracts, congressional staff, federal regulation, etc...
 
     .director.description.hidden
       Resque Director is ruby gem for the <a href="https://github.com/defunkt/resque" target="_blank">Resque</a> queueing system. It automatically adds/removes workers based on the length of the queue, or how long it takes for a job to go through. 
       
     #main
-      .fraustollc
+      .fraustollc.hidden
         .title 
           fraustollc.com
         =link_to image_tag("fraustollc.png"), "https://github.com/frausto/frausto.github.com", :target => '_blank', :class => 'preview'
-      .bgov.hidden
+      .bgov
         .title
           bgov.com 
         =link_to image_tag("bgov.png"), "http://www.bgov.com", :target => '_blank', :class => 'preview'
