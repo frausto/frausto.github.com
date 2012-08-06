@@ -61,13 +61,12 @@ disable_links()
 $(document).ready ->
   initial_page = window.location.hash.replace("#!", "")
   
-  if initial_page == "" && !window.location.search.match(///_escaped_fragment_///)
+  if initial_page == ""
     initial_page = "home" 
     window.location.hash = "#!home"
 
-  if !window.location.search.match(///_escaped_fragment_///)
-    load_page(initial_page)
-
+  
+  load_page(initial_page)
   for image_name in ["bgov", "director", "fraustollc", "me", "github", "gmail", "linkedin", "twitter"]
     image_tag = $('<img id="mypic" width="210" src="/images/' + image_name + '.png">')
     image_tag.css('display', 'none')

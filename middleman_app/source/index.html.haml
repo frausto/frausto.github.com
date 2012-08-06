@@ -21,7 +21,4 @@
 
     %div{:id => "main", :role => "main"}
     #hidden_images
-  - if page = params['_escaped_fragment_']
-    = render "content/#{page}"
-  -else
-    = javascript_include_tag "app.js"
+  = javascript_include_tag "app.js"
