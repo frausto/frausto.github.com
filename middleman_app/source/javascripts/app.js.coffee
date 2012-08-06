@@ -59,12 +59,12 @@ disable_links()
 $(document).ready ->
   initial_page = window.location.hash.replace("#", "")
   
-  if initial_page == ""
-    initial_page = "home" 
-    window.location.hash = "#home"
+  if initial_page == "" || initial_page == "home"
+    $("#home_link").addClass("target")
+    enable_links()
+  else
+    load_page(initial_page)
 
-  
-  load_page(initial_page)
   for image_name in ["bgov", "director", "fraustollc", "me", "github", "gmail", "linkedin", "twitter"]
     image_tag = $('<img id="mypic" width="210" src="/images/' + image_name + '.png">')
     image_tag.css('display', 'none')
