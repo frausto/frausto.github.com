@@ -2,22 +2,20 @@
 #= require_tree .
 
 current_page = ""
-all_links = ['#!home_link', '#!portfolio_link', '#!blog_link', '#!about_link', '#!contact_link']
+all_links = ['#home_link', '#portfolio_link', '#blog_link', '#about_link', '#contact_link']
 
 enable_links = ->
   for hash_tag in all_links
-    hash_selector = hash_tag.replace("!", "")
-    $(hash_selector).unbind('click');
-    $(hash_selector).bind 'click', {hash_tag: hash_tag}, (event) =>
+    $(hash_tag).unbind('click');
+    $(hash_tag).bind 'click', {hash_tag: hash_tag}, (event) =>
       event.preventDefault()
       hash_tag = event.data.hash_tag.replace("_link", "")
       window.location.hash = hash_tag
-      load_page(hash_tag.replace("#!", ""))
+      load_page(hash_tag.replace("#", ""))
       false
 
 disable_links = ->
   for hash_tag in all_links
-    hash_tag = hash_tag.replace("!", "")
     $(hash_tag).unbind('click');
     $(hash_tag).bind 'click', {hash_tag: hash_tag}, (event) =>
       event.preventDefault()
@@ -59,11 +57,11 @@ page_class = (page_name) ->
 
 disable_links()
 $(document).ready ->
-  initial_page = window.location.hash.replace("#!", "")
+  initial_page = window.location.hash.replace("#", "")
   
   if initial_page == ""
     initial_page = "home" 
-    window.location.hash = "#!home"
+    window.location.hash = "#home"
 
   
   load_page(initial_page)
