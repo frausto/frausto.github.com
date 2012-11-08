@@ -1,1 +1,1 @@
-((function(){window.GenericPage=function(){function a(){}return a.load=function(){},a.unload=function(){},a}()})).call(this);
+(function(){window.GenericPage=function(){function e(){}return e.load=function(){},e.unload=function(){},e}()}).call(this);
