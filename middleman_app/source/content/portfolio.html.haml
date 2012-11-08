@@ -9,6 +9,7 @@
       #right_click &rarr;
       #bgov_choice.option.current
       #fraustollc_choice.option
+      #champd_choice.option
       #director_choice.option
 
     .fraustollc.description.hidden
@@ -19,6 +20,9 @@
 
     .director.description.hidden
       Resque Director is ruby gem for the <a href="https://github.com/defunkt/resque" target="_blank">Resque</a> queueing system. It automatically adds/removes workers based on the length of the queue, or how long it takes for a job to go through. 
+
+    .champd.description.hidden
+      Champd is a social RPG for competitive games and sports. You can keep track of wins and loss. View your rankings and stats. Earn awards and badges for competing. Gain levels as you win more. Find others to challenge yourself against.
       
     #main
       .fraustollc.hidden
@@ -33,3 +37,7 @@
         .title 
           resque-director
         = link_to image_tag("director.png"), "https://rubygems.org/gems/resque-director" , :target => '_blank', :class => 'preview'
+      .champd.hidden
+        .title 
+          champd.com
+        = link_to image_tag("champd.png"), "http://champd.com" , :target => '_blank', :class => 'preview'
