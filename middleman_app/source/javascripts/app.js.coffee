@@ -65,7 +65,7 @@ $(document).ready ->
   else
     load_page(initial_page)
 
-  for image_name in ["bgov", "director", "fraustollc", "me", "github", "gmail", "linkedin", "twitter"]
+  for image_name in ["me", "github", "gmail", "linkedin", "twitter"]
     image_tag = $('<img id="mypic" width="210" src="/images/' + image_name + '.png">')
     image_tag.css('display', 'none')
     $('#hidden_images').append(image_tag);
