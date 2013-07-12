@@ -52,7 +52,6 @@ load_page = (page_name) ->
 
 page_class = (page_name) ->
   return AboutPage if page_name == "about"
-  return new PortfolioPage if page_name == "portfolio"
   GenericPage
 
 disable_links()
@@ -65,8 +64,8 @@ $(document).ready ->
   else
     load_page(initial_page)
 
-  for image_name in ["me", "github", "gmail", "linkedin", "twitter"]
+  for image_name in ["me", "bgov", "zearn", "diobox", "champd", "github", "gmail", "linkedin", "twitter"]
     image_tag = $('<img id="mypic" width="210" src="/images/' + image_name + '.png">')
     image_tag.css('display', 'none')
-    $('#hidden_images').append(image_tag);
+    $('#hidden_images').append(image_tag)
 
