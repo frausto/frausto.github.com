@@ -6,7 +6,7 @@ all_links = ['#home_link', '#portfolio_link', '#blog_link', '#about_link', '#con
 
 enable_links = ->
   for hash_tag in all_links
-    $(hash_tag).unbind('click');
+    $(hash_tag).unbind('click')
     $(hash_tag).bind 'click', {hash_tag: hash_tag}, (event) =>
       event.preventDefault()
       hash_tag = event.data.hash_tag.replace("_link", "")
@@ -16,7 +16,7 @@ enable_links = ->
 
 disable_links = ->
   for hash_tag in all_links
-    $(hash_tag).unbind('click');
+    $(hash_tag).unbind('click')
     $(hash_tag).bind 'click', {hash_tag: hash_tag}, (event) =>
       event.preventDefault()
       false
@@ -25,7 +25,7 @@ disable_links = ->
 load_page = (page_name) ->
   return if current_page == page_name
   main = $("#main")
-  url = "/content/" + page_name + ".html"
+  url = "/content/" + page_name
   $(".target").removeClass("target")
   $("#" + page_name + "_link").addClass("target")
   disable_links()
