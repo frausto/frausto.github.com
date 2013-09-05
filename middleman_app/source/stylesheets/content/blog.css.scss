@@ -1,8 +1,5 @@
 #blog{
-  .header{
-  	font-weight: bold;
-    .small {
-      font-size: 12px;
-    }
-  }
+  #navigation{ .header{ width: 180px; text-align: center;}}
+  #navigation{ width: 250px; }
+  #navigation{ #site_links { width: 220px;}}
 }

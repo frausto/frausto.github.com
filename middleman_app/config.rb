@@ -37,6 +37,7 @@ page "/content/*", :layout => false
 # 
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
+page "/blog/*", :layout => :blog
 # 
 # A path which all have the same layout
 # with_layout :admin do
@@ -59,6 +60,7 @@ page "/content/*", :layout => false
 #   end
 # end
 
+
 # Change the CSS directory
 # set :css_dir, "alternative_css_directory"
 
@@ -78,6 +80,8 @@ configure :build do
   
   # Enable cache buster
   # activate :cache_buster
+  #
+  activate :directory_indexes
   
   # Use relative URLs
   # activate :relative_assets

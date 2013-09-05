@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+    %meta{:name=>"description", :content => "Frausto LLC is a small single member company that specializes in building out custom web applications for clients."}  
+    %meta{:name=>"keywords", :content=>"nolan, frausto, frausto llc, consultancy, new york, web development, web applications, web apps, rails, ruby, agile, contractor"}
+    %meta{:name=>"author", :content=>"fraustollc.com"}
+    %title Frausto LLC
+    = stylesheet_link_tag "site.css"
+    = favicon_tag 'favicon.png'
+    %script{:type => 'text/javascript'}
+      :plain
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34780478-1']);
+        _gaq.push(['_setDomainName', 'fraustollc.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+  %body{:class => page_classes}
+    #blognavigation
+      = link_to "/", :id => "blog_home" do
+        .nav_item.header
+          .stuff
+            %span.bracket {
+            %span.headline frausto llc
+            %span.bracket }
+      %h2.bold.thoughts
+        Thoughts and stuff
+      .summary
+        %h3
+          Nolan Frausto is your friendly neighborhood web developer.
+        %h3
+          He runs Frausto LLC: a small single member company that specializes in building out custom web applications for clients.
+
+    %div{:id => "main", :role => "main"}
+      = yield
+    #hidden_images
+  = javascript_include_tag "app.js"
