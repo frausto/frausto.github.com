@@ -6,7 +6,7 @@ $link-focus-color:   false;
 $link-active-color:  false;
 $link-visited-color: false;
 
-$font-color:  #2a2a2a;
+$font-color:  #423f3d;
 $font-family: sans-serif;
 $base-font-size:   12px;
 $base-line-height: 18px;
@@ -23,7 +23,7 @@ body {
   font-weight: 300;
   font-size: 17px;
   line-height: 25px;
-  color: #444;
+  color: #423f3d;
   width: 1000px;
   margin: 0 auto;
   padding: 50px 0 0 0;
@@ -60,3 +60,4 @@ h3 {
 @import "content/about.css.scss";
 @import "content/contact.css.scss";
 @import "content/portfolio.css.scss";
+@import "content/blog.css.scss";
