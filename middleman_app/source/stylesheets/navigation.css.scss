@@ -3,8 +3,8 @@
     text-decoration: none;
     color: inherit;
   }
-  a:hover { 
-    background-color: #f1f1f1; 
+  a:hover {
+    background-color: #f1f1f1;
   }
 
   width: 350px;
@@ -20,14 +20,11 @@
   .nav_item {
     margin: 0px 10px 10px 0;
     padding: 15px;
-    background-color: #CAE8EA;
     display: block;
   }
 
   .header{
     width: 265px;
-    background-color: #444;
-    color: white;
     margin-bottom: 25px;
     height: 100px;
     cursor: default;
@@ -44,11 +41,7 @@
   }
 
   .target{
-    background-color: #444;
-    color: white;
-  }
-
-  .target:hover{
-    background-color: #444; 
+    color: cornflowerblue;
+    background-color: #f1f1f1;
   }
 }
