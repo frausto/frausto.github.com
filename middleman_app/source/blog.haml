@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
-    %meta{:name=>"description", :content => "Frausto LLC is a small single member company that specializes in building out custom web applications for clients."}  
+    %meta{:name=>"description", :content => "Frausto LLC is a small single member company that specializes in building out custom web applications for clients."}
     %meta{:name=>"keywords", :content=>"nolan, frausto, frausto llc, consultancy, new york, web development, web applications, web apps, rails, ruby, agile, contractor"}
     %meta{:name=>"author", :content=>"fraustollc.com"}
     %title Frausto LLC
@@ -37,6 +37,19 @@
           Nolan Frausto is your friendly neighborhood web developer.
         %h3
           He runs Frausto LLC: a small single member company that specializes in building out custom web applications for clients.
+
+      .smally
+        %p
+          .bold Blog Posts
+        %p
+          .bold 05 September 2013
+          =link_to "The Code Culture Problem", "/blog/shit_code"
+        %p
+          .bold 26 November 2013
+          =link_to "Outsourcing Impossible", "/blog/outsourcing_impossible"
+        %p
+          .bold 05 June 2014
+          =link_to "Finally. Clippy for Chrome!", "/blog/clippy_two"
 
     %div{:id => "main", :role => "main"}
       = yield
