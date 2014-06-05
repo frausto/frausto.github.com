@@ -5,13 +5,15 @@
     vertical-align: top;
     margin-top: 50px;
     margin-right: 4%;
-    text-align: center;
+    font-size: 12px;
+    .nav_item.header{text-align: center;}
+    .summary{margin-top: 20px;}
   }
 
   .smally{margin-top: 10px; text-align: left; margin-top: 50px; font-size: 12px; p{font-size: 12px;} }
 
   .bold{ font-weight: bold; }
-  .thoughts{ margin-top: 20px; }
+  .thoughts{ margin-top: 50px; }
   .large{ font-weight:bold; font-size: 25px; }
 
   #main{
