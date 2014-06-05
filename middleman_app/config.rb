@@ -1,4 +1,4 @@
-### 
+###
 # Compass
 ###
 
@@ -31,14 +31,14 @@ end
 ###
 
 # Per-page layout changes:
-# 
+#
 # With no layout
 page "/content/*", :layout => false
-# 
+#
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
 page "/blog/*", :layout => :blog
-# 
+#
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
@@ -74,25 +74,25 @@ page "/blog/*", :layout => :blog
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
-  
+
   # Minify Javascript on build
   activate :minify_javascript
-  
+
   # Enable cache buster
   # activate :cache_buster
   #
   activate :directory_indexes
-  
+
   # Use relative URLs
   # activate :relative_assets
-  
+
   # Compress PNGs after build
   # First: gem install middleman-smusher
   require "middleman-smusher"
   activate :smusher
-  
+
   # Or use a different image path
   # set :http_path, "/Content/images/"
 
-  set :build_dir, '../'
+  set :build_dir, 'build'
 end
