@@ -25,7 +25,7 @@ disable_links = ->
 load_page = (page_name) ->
   return if current_page == page_name
   main = $("#main")
-  url = "/content/" + page_name
+  url = location.origin + "/content/" + page_name
   $(".target").removeClass("target")
   $("#" + page_name + "_link").addClass("target")
   disable_links()
@@ -57,7 +57,7 @@ page_class = (page_name) ->
 disable_links()
 $(document).ready ->
   initial_page = window.location.hash.replace("#", "")
-  
+
   if initial_page == "" || initial_page == "home"
     $("#home_link").addClass("target")
     enable_links()
