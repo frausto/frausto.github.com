@@ -1,1 +1,98 @@
-= partial 'content/home'
+- content_for :sub_nav do
+  #site_links
+    = link_to "about", "#about", :class => "nav_item nav_link", :id => "about_link"
+    = link_to "blog", "#blog", :class => "nav_item nav_link", :id => "blog_link"
+    = link_to "clients", "#portfolio", :class => "nav_item nav_link", :id => "portfolio_link"
+    = link_to "contact", "#contact", :class => "nav_item nav_link", :id => "contact_link"
+
+#about
+  .headline.light
+    about
+
+  .content
+    %p
+      Frausto LLC is a small single member company that specializes in building out custom web applications for clients.
+    %p
+      I created the company in order to provide programming and technical consulting services for websites in any stage of the development process. I follow <a href="http://agilemanifesto.org/" target="_blank">Agile</a> best practices, and believe in delivering quality code in a timely manner.
+    %p
+      Primarily working on Ruby on Rails projects in the New York City area, I am a fullstack developer dedicated to delivering reliable, manageable, scalable, and well designed web products.
+    %p
+      What it comes down to is that I am just a guy who likes coding. I am a web developer in the New York City area who enjoys climbing, museums, and good beer.
+
+#portfolio
+  .headline.light
+    portfolio
+
+  .content
+
+    .congresswhat
+      .pic= link_to image_tag("bgov.png"), "http://congresswhat.com" , :target => '_blank', :class => 'preview'
+      .description
+        <span class='lead'>Congress What</span> <span class='mytitle'>{lead developer}</span> lets you gather information about your members of congress in an easy and intuitive way.
+
+    .bgov
+      .pic= link_to image_tag("bgov.png"), "http://bgov.com" , :target => '_blank', :class => 'preview'
+      .description
+        <span class='lead'>Bgov</span> <span class='mytitle'>{senior developer}</span> is a <a href="http://rubyonrails.org/" target='_blank'>Rails</a> app run by <a href="http://en.wikipedia.org/wiki/Bloomberg_L.P." target='_blank'>Bloomberg</a> dedicated to organizing government data including but not limited to news, grants, contracts, congressional staff, federal regulation, etc...
+
+    .zearn
+      .pic= link_to image_tag("zearn.png"), "http://zearn.com" , :target => '_blank', :class => 'preview'
+      .description
+        <span class='lead'>Zearn</span> <span class='mytitle'>{developer consultant}</span> was designed by teachers for teachers in order to engage kids with joyful learning experiences, ensure students master basic and advanced <a href='http://www.corestandards.org/' target='_blank'>Common Core skills</a>, and let teachers provide targeted individual or small group instruction.
+
+    .tinderon
+      .pic= link_to image_tag("bgov.png"), "http://tinderon.com" , :target => '_blank', :class => 'preview'
+      .description
+        <span class='lead'>TinderOn</span> <span class='mytitle'>{lead developer}</span> lets you share you tinder stories. Have fun!
+
+    .champd
+      .pic=link_to image_tag("champd.png"), "http://champd.com", :target => '_blank', :class => 'preview'
+      .description
+        <span class='lead'>Champd</span> <span class='mytitle'>{founder / lead developer}</span> lets you find people around you to play against in the game or sport of your choosing. We keep track of all your wins and losses, and let you search for people of similar skill levels. That's right, you're welcome.
+
+    .diobox
+      .pic= link_to image_tag("diobox.png"), "http://diobox.com" , :target => '_blank', :class => 'preview'
+      .description
+        <span class='lead'>Diobox</span> <span class='mytitle'>{lead developer}</span> the most advanced platform for managing events and people.
+
+
+
+
+#blog
+  .headline.light
+    blog
+
+  .content
+    %p
+      To get to know me better check out below for a small collection of my thoughts on coding, life, and possibly some other things.
+    %p
+      .bold 05 September 2013
+      =link_to "The Code Culture Problem", "/blog/shit_code"
+
+    %p
+      .bold 26 November 2013
+      =link_to "Outsourcing Impossible", "/blog/outsourcing_impossible"
+
+    %p
+      .bold 05 June 2014
+      =link_to "Finally. Clippy for Chrome!", "/blog/clippy_two"
+
+    %p
+      .bold 04 August 2014
+      =link_to "The Tech Interview Problem", "/blog/interview_fun"
+
+
+#contact
+  .headline.light
+    contact
+
+  .content
+    %p
+      I am always interested in meeting other web enthusiasts. Whether you want to discuss new technologies, are looking for someone to help build out a website, or are just lonely and want to talk to someone. I don't judge.
+    %p
+      Feel free to email me, or contact me through any of the means below.
+
+    %p
+      .icon= link_to image_tag("linkedin.png"), "http://www.linkedin.com/in/nolanfrausto", :target => '_blank'
+      .icon= link_to image_tag("github.png"), "https://github.com/frausto", :target => '_blank'
+      .icon= link_to image_tag("gmail.png"), "mailto:nolan@fraustollc.com", :target => '_blank'

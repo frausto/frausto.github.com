@@ -22,11 +22,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 17px;
-  line-height: 25px;
-  color: #423f3d;
-  width: 1000px;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
+  color: $font-color;
+  min-width: 700px;
+  -webkit-font-smoothing: antialiased !important;
+  a{-webkit-font-smoothing: antialiased !important;}
 }
 
 .shadow {
@@ -57,7 +56,3 @@ h3 {
 @import "navigation.css.scss";
 @import "main.css.scss";
 @import "blog.css.scss";
-@import "content/about.css.scss";
-@import "content/contact.css.scss";
-@import "content/portfolio.css.scss";
-@import "content/blog.css.scss";

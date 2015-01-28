@@ -23,19 +23,16 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
   %body{:class => page_classes}
-    #navigation
-      .nav_item.header
-        %span.bracket {
-        %span.headline frausto llc
-        %span.bracket }
-        %h3
-          code. agile development. consultancy. custom web apps. simple.
-      #site_links
-        = link_to "Home", "#home", :class => "nav_item nav_link", :id => "home_link"
-        = link_to "About", "#about", :class => "nav_item nav_link", :id => "about_link"
-        = link_to "Blog", "#blog", :class => "nav_item nav_link", :id => "blog_link"
-        = link_to "Clients", "#portfolio", :class => "nav_item nav_link", :id => "portfolio_link"
-        = link_to "Contact", "#contact", :class => "nav_item nav_link", :id => "contact_link"
+    #nav_wrap
+      #navigation
+        .nav_item.header
+          %span.bracket {
+          %span.headline frausto llc
+          %span.bracket }
+          .things
+            code.  custom web apps.  simple.
+        = yield_content(:sub_nav)
+
 
     %div{:id => "main", :role => "main"}
       = yield

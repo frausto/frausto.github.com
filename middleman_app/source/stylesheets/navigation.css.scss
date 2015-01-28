@@ -1,47 +1,77 @@
+#nav_wrap{
+  position: relative;
+  height: 600px;
+}
 #navigation{
+  background: #2c3e50 image-url('tropic.jpg') fixed bottom;
+  text-shadow: 0px 0px 50px black;
+  color: white;
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
   a {
     text-decoration: none;
     color: inherit;
+    color: white;
   }
   a:hover {
     background-color: #f1f1f1;
   }
 
-  width: 350px;
-  float: left;
+  width: 100%;
+  height: 100%;
   padding: 20px 10px 10px 0;
-  display: inline-block;
-
-  #site_links{
-    width: 305px;
-    display: inline-block;
-  }
 
   .nav_item {
-    margin: 0px 10px 10px 0;
+    margin: 110px 10px 10px 0;
     padding: 15px;
-    display: block;
+
   }
 
   .header{
-    width: 265px;
-    margin-bottom: 25px;
-    height: 100px;
-    cursor: default;
+    text-align: center;
+  }
+
+  .things{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
   }
 
   .bracket {
-    font-size: 40px;
+    font-size: 150px;
   }
 
   .headline {
     margin-top: 10px;
-    font-size: 32px;
-    font-weight: lighter;
+    font-size: 90px;
+    font-weight: normal;
   }
 
   .target{
     color: cornflowerblue;
     background-color: #f1f1f1;
   }
+}
+
+
+#site_links{
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 25px 0 25px 0;
+  font-size: 20px;
+  background: rgba(0,0,0,0.6);
+  a{color: white; margin-left: 20px; font-weight: thin; }
+  position: absolute;
+  bottom: 0;
+}
+
+#navigation.fixy{
+  position: fixed;
+  top: -520px;
+  z-index: 100;
 }
