@@ -16,7 +16,7 @@
     color: white;
   }
   a:hover {
-    background-color: #f1f1f1;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
   }
 
   width: 100%;
@@ -24,7 +24,7 @@
   padding: 20px 10px 10px 0;
 
   .nav_item {
-    margin: 110px 10px 10px 0;
+    margin: 165px 10px 10px 0;
     padding: 15px;
 
   }
@@ -48,6 +48,8 @@
     margin-top: 10px;
     font-size: 90px;
     font-weight: normal;
+    position: relative;
+    top: -10px;
   }
 
   .target{

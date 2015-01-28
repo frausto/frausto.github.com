@@ -23,40 +23,27 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
   %body{:class => page_classes}
-    #blognavigation
-      = link_to "/", :id => "blog_home" do
+    #nav_wrap
+      #navigation
         .nav_item.header
-          .stuff
-            %span.bracket {
-            %span.headline frausto llc
-            %span.bracket }
-      %h2.bold.thoughts
-        Thoughts and stuff
-      .summary
-        %p
-          Nolan Frausto is your friendly neighborhood web developer.
-        %p
-          He runs Frausto LLC: a small single member company that specializes in building out custom web applications for clients.
+          %span.bracket {
+          %span.headline frausto llc
+          %span.bracket }
+          .things
+            code.  custom web apps.  simple.
+        = yield_content(:sub_nav)
+        #site_links
+          = link_to "about", "http://fraustollc.com#about", :class => "nav_item nav_link", :id => "about_link"
+          = link_to "blog", "http://fraustollc.com#blog", :class => "nav_item nav_link", :id => "blog_link"
+          = link_to "clients", "http://fraustollc.com#portfolio", :class => "nav_item nav_link", :id => "portfolio_link"
+          = link_to "contact", "http://fraustollc.com#contact", :class => "nav_item nav_link", :id => "contact_link"
 
-      .smally
-        %p
-          .bold Blog Posts
-        %p
-          .bold 05 September 2013
-          =link_to "The Code Culture Problem", "/blog/shit_code"
-        %p
-          .bold 26 November 2013
-          =link_to "Outsourcing Impossible", "/blog/outsourcing_impossible"
-        %p
-          .bold 05 June 2014
-          =link_to "Finally. Clippy for Chrome!", "/blog/clippy_two"
-        %p
-          .bold 04 August 2014
-          =link_to "The Tech Interview Problem", "/blog/interview_fun"
 
     %div{:id => "main", :role => "main"}
-      = yield
+      #blog_city.section
+        = yield
     #hidden_images
+  = javascript_include_tag "app.js"
   %footer
     .by Nolan Frausto &copy;
     .subtext Nolan lives and works in San Francisco. You may have spotted him in various coffee shops or bars depending on the time of day.
