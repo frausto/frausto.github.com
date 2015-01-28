@@ -20,7 +20,7 @@
   }
 
   width: 100%;
-  height: 100%;
+  height: 600px;
   padding: 20px 10px 10px 0;
 
   .nav_item {
@@ -72,6 +72,6 @@
 
 #navigation.fixy{
   position: fixed;
-  top: -520px;
+  top: -530px;
   z-index: 100;
 }

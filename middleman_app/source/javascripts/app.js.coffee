@@ -6,6 +6,7 @@ wrap = $("body")
 links = $("#navigation")
 
 $(window).scroll((e) ->
+  console.log(wrap.scrollTop())
   if wrap.scrollTop() > 530
     links.addClass("fixy")
   else
