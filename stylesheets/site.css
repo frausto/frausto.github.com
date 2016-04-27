@@ -9,8 +9,8 @@ body {
     max-width: 800px;
     margin: 50px auto 0 auto;
 }
-#things{font-size: 15px;}
 
+#things{font-size: 15px;}
 .textcenter{text-align: center;}
 #top_title{margin-top: 40px; margin-bottom: 10px; font-size: 20px;}
 .headline{ font-size: 30px; font-weight: bold;}
@@ -34,13 +34,55 @@ img{ border-radius: 50%; width: 75px; }
 
 .lside{margin-top: 70px; }
 .rside{margin-top: 60px; }
-
+.homelink{ color: black; }
 
 #fourohfour{
   font-size: 60px;
   margin-top: 30px;
 }
 
-.homelink{ color: black; }
 
+#blog{ line-height: 27px; font-size: 18px; }
+#blog .bold{
+  font-weight: bold;
+}
 
+#blog .headlinez {
+  margin-top: 50px;
+  text-align: left;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #3a87ad;
+  width: auto;
+  height: auto;
+  background: none;
+  font-size: 25px;
+  padding-top: 0;
+}
+
+#blog .headline .date {
+    color: #afa9a5;
+    font-size: 15px;
+}
+#blog .edit {
+  margin-top: 40px;
+}
+#blog .large {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#blog p {
+  margin-bottom: 30px;
+}
+
+footer {
+width: 100%;
+margin: 80px auto 40px auto;
+text-align: left;
+}
+
+footer .subtext {
+  color: #afa9a5;
+  font-size: 12px;
+}
