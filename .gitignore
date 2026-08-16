@@ -2,4 +2,7 @@
 .rvmrc
 middleman_app/.sass-cache
 .DS_Store
-
+node_modules/
+.next/
+out/
+.env*
