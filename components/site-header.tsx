@@ -14,7 +14,7 @@ export function SiteHeader() {
             aria-hidden="true"
           />
           <span className="font-serif text-lg font-semibold tracking-tight">
-            Field Notes
+            On Resonance
           </span>
         </Link>
         <nav className="flex items-center gap-6 text-sm">

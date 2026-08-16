@@ -14,17 +14,16 @@ export default function HomePage() {
         {/* Intro */}
         <section className="py-16 sm:py-20">
           <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">
-            Engineering · Tech · Philosophy · Life
+          Technology · Building · Philosophy · Ambition · Family · Travel
           </p>
           <h1 className="text-balance font-serif text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
-            Notes from the space between{' '}
-            <span className="text-primary">building</span> and{' '}
-            <span className="text-accent">thinking</span>.
+            Writing for {' '}
+            <span className="text-primary">Resonance</span> and{' '}
+            <span className="text-accent">Meaning</span>.
           </h1>
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            I write about the craft of engineering, the tools I use, and the
-            ideas that shape how I work and live. Long-form, unhurried, and
-            written by hand.
+            Trying to figure out how to pursue a better life without confusing ambition with worth, or progress with purpose. Thoughts on technology, work, people, and life, while trying to become more thoughtful, more forgiving, and more fully myself.
+
           </p>
         </section>
 
