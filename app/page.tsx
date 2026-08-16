@@ -14,7 +14,7 @@ export default function HomePage() {
         {/* Intro */}
         <section className="py-16 sm:py-20">
           <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">
-          Technology · Building · Philosophy · Ambition · Family · Travel
+          Nolan Frausto — CTO, writer, and builder.
           </p>
           <h1 className="text-balance font-serif text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Writing for {' '}

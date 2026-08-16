@@ -7,21 +7,13 @@ export function SiteFooter() {
         <p>© {new Date().getFullYear()} On Resonance. Written by hand.</p>
         <div className="flex items-center gap-5">
           <a
-            href="https://github.com"
-            className="transition-colors hover:text-accent"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="mailto:hello@example.com"
+            href="mailto:nrfrausto@gmail.com"
             className="transition-colors hover:text-accent"
           >
             Email
           </a>
-          <Link href="/" className="transition-colors hover:text-accent">
-            RSS
+          <Link href="https://www.linkedin.com/in/nolanfrausto" className="transition-colors hover:text-accent">
+            LinkedIn
           </Link>
         </div>
       </div>

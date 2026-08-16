@@ -16,7 +16,7 @@ const fraunces = Fraunces({
 })
 
 export const metadata: Metadata = {
-  title: 'Field Notes — Engineering, tech & life',
+  title: 'On Resonance — Engineering, tech & life',
   description:
     'A personal blog about the craft of engineering, tech work, personal philosophy, and life.',
   generator: 'v0.app',
