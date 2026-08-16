@@ -1,5 +1,5 @@
 ---
-title: "Code culture problem"
+title: "Code Culture Problem"
 date: "2013-09-25"
 excerpt: "On bad code, unnecessary contempt, and the difference between criticizing a system and contributing to its improvement."
 ---
