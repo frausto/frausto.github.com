@@ -50,15 +50,29 @@ export default function HomePage() {
           </h2>
           <div className="mt-5 flex flex-col gap-4 text-pretty leading-relaxed text-muted-foreground">
             <p>
-              I&apos;m an engineer who cares as much about how things are built
-              as what gets built. Most of my days are spent designing systems,
-              writing code, and trying to leave things a little clearer than I
-              found them.
+              I'm Nolan. I'm a CTO, software engineer, writer, husband, and dad living in the Bay Area.
             </p>
+
             <p>
-              This is where I think out loud — about technical work, about the
-              philosophy that guides it, and about the ordinary business of
-              living a good life alongside all of it.
+              I've spent most of my career building software, products, and engineering teams.
+              I'm interested in technology and AI, but probably more interested in the people
+              building them, the organizations that form around them, and all the strange ways
+              things go right and wrong.
+            </p>
+
+            <p>
+              Outside of work, I write, travel, read sci-fi and fantasy, occasionally play piano,
+              play too many games, and spend a lot of time thinking about ambition, family,
+              creativity, and what makes a life feel meaningful.
+            </p>
+
+            <p>
+              This site is where I put some of those thoughts.
+            </p>
+
+            <p>
+              There isn't really a theme beyond things I find interesting, things I can't leave
+              alone, and things I want to remember.
             </p>
           </div>
         </section>
