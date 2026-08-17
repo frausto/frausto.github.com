@@ -1,6 +1,11 @@
 import Link from 'next/link'
 
-export function SiteHeader() {
+export function SiteHeader({
+  // Pages without a subscribe form on them point back to the home page's.
+  subscribeHref = '#subscribe',
+}: {
+  subscribeHref?: string
+}) {
   return (
     <header className="border-b border-border">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
@@ -31,7 +36,7 @@ export function SiteHeader() {
             About
           </Link>
           <Link
-            href="#subscribe"
+            href={subscribeHref}
             className="rounded-lg border border-accent/40 px-3 py-1.5 font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             Subscribe

@@ -19,7 +19,6 @@ export function SubscribeForm() {
         <form
           action="https://buttondown.com/api/emails/embed-subscribe/frausto"
           method="post"
-          target="_blank"
           className="embeddable-buttondown-form mt-6 flex flex-col gap-3 sm:flex-row"
         >
           <label htmlFor="bd-email" className="sr-only">
