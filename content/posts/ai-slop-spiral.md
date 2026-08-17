@@ -124,6 +124,8 @@ I know this whole thing may make me sound like an old man yelling at clouds abou
 
 AI is a world-changing technology. It is an extraordinarily powerful tool, and I use it constantly. I want my teams to use it. I expect it to become a normal part of nearly every technical and creative workflow.
 
+Even as it stands, my doomsday examples aside, it has generally been a huge net positive for us. But, as they say, with great power comes great responsibility. Anything with this much potential for change is going to come with a period of adjustment, along with new problems created by the change itself.
+
 But it is not a magic wand. Even when we build AI-forward shared context systems for teams to use on every project, such that theoretically nothing gets lost and we are all operating under the same context models, we end up losing context through laziness, AI hallucinations, documents contradictions, and there are any number of other ways information gets distorted or quietly dropped along the way. We are still figuring out how to solve that.
 
 ## **So What Do We Do?**
