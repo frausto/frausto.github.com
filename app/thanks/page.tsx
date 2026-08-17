@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { ArrowLeft, MailCheck } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
+import { ConfirmationMessage } from '@/components/confirmation-message'
 
 export const metadata: Metadata = {
   title: 'Thanks for subscribing — On Resonance',
@@ -30,11 +31,7 @@ export default function ThanksPage() {
               Thanks for subscribing.
             </h1>
 
-            <p className="mt-4 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              One last step — you're not on the list yet. I just sent you a
-              confirmation email. Open it and click the link inside to finish
-              signing up.
-            </p>
+            <ConfirmationMessage />
 
             <div className="mt-8 border-t border-border pt-6">
               <p className="text-sm font-medium uppercase tracking-widest text-accent">
