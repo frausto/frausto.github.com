@@ -1,7 +1,7 @@
 ---
 title: "The AI Slop Spiral"
 date: "2026-08-17"
-excerpt: "AI is an incredibly powerful tool, but it also makes it easy to look like we understand work we have never really thought through. The result is faster output, worse handoffs, and an organizational process that slowly spirals into slop."
+excerpt: "AI is an incredibly powerful tool, but it also makes it easy not to think while producing something that looks very much like thinking. The result is faster output, worse handoffs, and an organizational process that slowly spirals into slop."
 ---
 
 I open the document. My computer screen glares brightly as the sun sets outside my home office windows. A dying lamp hums faintly in the background, interrupted only by the click of the mouse wheel as I scroll.
@@ -22,7 +22,7 @@ Work is underway.
 
 Faster than ever, a pull request comes in, the code is done. Copilot has already reviewed it and left a series of notes about error handling, naming, and possible edge cases. After some back and forth with a few coding agents, the code gets the approval of AI and another real human engineer and it moves to testing.
 
-QA uses AI to help validate the implementation against the acceptance criteria that AI generated from the AI generated PRD and design that AI distilled from someone higher-up’s AI stream of conscious notes. The PM signs off. Design signs off. QA signs off. All are real humans.
+QA uses AI to help validate the implementation against the acceptance criteria that AI generated from the AI-generated PRD and designs that AI distilled from someone higher-up’s AI stream of conscious notes. The PM signs off. Design signs off. QA signs off. All are real humans.
 
 The feature goes to production in record time.
 
