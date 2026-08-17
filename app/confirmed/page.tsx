@@ -7,8 +7,12 @@ import { getAllPosts } from '@/lib/posts'
 import { formatDate } from '@/lib/format-date'
 
 export const metadata: Metadata = {
-  title: "You're subscribed — On Resonance",
+  // The site name is appended by the template in app/layout.tsx.
+  title: "You're subscribed",
   description: 'Your subscription is confirmed. Here is where to start reading.',
+  // Not a page worth indexing, but it should still be its own canonical rather
+  // than inheriting the layout's '/' and reading as a duplicate of the home page.
+  alternates: { canonical: '/confirmed/' },
   robots: { index: false, follow: true },
 }
 

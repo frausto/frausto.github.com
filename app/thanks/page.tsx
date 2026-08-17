@@ -6,9 +6,13 @@ import { SiteFooter } from '@/components/site-footer'
 import { ConfirmationMessage } from '@/components/confirmation-message'
 
 export const metadata: Metadata = {
-  title: 'Thanks for subscribing — On Resonance',
+  // The site name is appended by the template in app/layout.tsx.
+  title: 'Thanks for subscribing',
   description:
     'One more step: confirm your subscription from the email in your inbox.',
+  // Not a page worth indexing, but it should still be its own canonical rather
+  // than inheriting the layout's '/' and reading as a duplicate of the home page.
+  alternates: { canonical: '/thanks/' },
   robots: { index: false, follow: true },
 }
 

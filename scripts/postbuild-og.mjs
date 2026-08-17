@@ -3,10 +3,11 @@
 // application/octet-stream, which stops Twitter/Slack/LinkedIn from rendering
 // the preview. This renames them to *.png and points the meta tags at the new
 // name (also dropping Next's cache-busting query, which a static host ignores).
-import { readdir, readFile, rename, writeFile } from 'fs/promises'
+import { copyFile, readdir, readFile, rename, writeFile } from 'fs/promises'
 import path from 'path'
 
 const outDir = path.join(process.cwd(), 'out')
+const postsDir = path.join(process.cwd(), 'content/posts')
 const imageNames = new Set(['opengraph-image', 'twitter-image'])
 
 async function walk(dir) {
@@ -29,19 +30,29 @@ for (const file of files) {
   renamed += 1
 }
 
-if (renamed === 0) {
-  console.log('postbuild-og: no generated social images found, nothing to do')
-  process.exit(0)
-}
-
 let patched = 0
-for (const file of files.filter((f) => f.endsWith('.html'))) {
-  const html = await readFile(file, 'utf8')
-  const next = html.replace(/(opengraph-image|twitter-image)(\?[a-zA-Z0-9]+)?/g, '$1.png')
-  if (next !== html) {
-    await writeFile(file, next)
-    patched += 1
+if (renamed === 0) {
+  console.log('postbuild-og: no generated social images found, skipping rename')
+} else {
+  for (const file of files.filter((f) => f.endsWith('.html'))) {
+    const html = await readFile(file, 'utf8')
+    const next = html.replace(/(opengraph-image|twitter-image)(\?[a-zA-Z0-9]+)?/g, '$1.png')
+    if (next !== html) {
+      await writeFile(file, next)
+      patched += 1
+    }
   }
 }
 
-console.log(`postbuild-og: renamed ${renamed} image(s), updated ${patched} HTML file(s)`)
+// Publish each post's markdown source at /posts/<slug>.md. AI crawlers and
+// anyone scripting against the site get the prose without the page chrome;
+// /llms.txt points at these.
+const postFiles = (await readdir(postsDir)).filter((f) => f.endsWith('.md'))
+for (const file of postFiles) {
+  await copyFile(path.join(postsDir, file), path.join(outDir, 'posts', file))
+}
+
+console.log(
+  `postbuild-og: renamed ${renamed} image(s), updated ${patched} HTML file(s), ` +
+    `published ${postFiles.length} markdown source(s)`
+)

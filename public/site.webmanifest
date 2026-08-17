@@ -1,6 +1,10 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "On Resonance — Engineering, tech & life",
+  "short_name": "On Resonance",
+  "description": "A personal blog about the craft of engineering, tech work, personal philosophy, and life.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +19,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#fafbfc",
+  "background_color": "#fafbfc",
   "display": "standalone"
 }

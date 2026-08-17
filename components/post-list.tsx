@@ -19,25 +19,27 @@ export function PostList({ posts }: { posts: PostMeta[] }) {
     <ul className="flex flex-col">
       {posts.map((post) => (
         <li key={post.slug} className="border-t border-border first:border-t-0">
-          <Link
-            href={`/posts/${post.slug}`}
-            className="group flex flex-col gap-1.5 py-6 transition-colors"
-          >
-            <div className="flex items-center gap-3 text-xs text-muted-foreground">
-              <time dateTime={post.date}>{formatDate(post.date)}</time>
-              <span
-                className="h-1 w-1 rounded-full bg-accent"
-                aria-hidden="true"
-              />
-              <span>{post.readingTime}</span>
-            </div>
-            <h3 className="font-serif text-xl font-semibold tracking-tight text-foreground decoration-2 underline-offset-4 group-hover:text-primary group-hover:underline">
-              {post.title}
-            </h3>
-            <p className="text-pretty leading-relaxed text-muted-foreground">
-              {post.excerpt}
-            </p>
-          </Link>
+          <article>
+            <Link
+              href={`/posts/${post.slug}`}
+              className="group flex flex-col gap-1.5 py-6 transition-colors"
+            >
+              <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
+                <span
+                  className="h-1 w-1 rounded-full bg-accent"
+                  aria-hidden="true"
+                />
+                <span>{post.readingTime}</span>
+              </div>
+              <h3 className="font-serif text-xl font-semibold tracking-tight text-foreground decoration-2 underline-offset-4 group-hover:text-primary group-hover:underline">
+                {post.title}
+              </h3>
+              <p className="text-pretty leading-relaxed text-muted-foreground">
+                {post.excerpt}
+              </p>
+            </Link>
+          </article>
         </li>
       ))}
     </ul>

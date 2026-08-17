@@ -2,6 +2,7 @@ import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { PostList } from '@/components/post-list'
 import { SubscribeForm } from '@/components/subscribe-form'
+import { SiteStructuredData } from '@/components/structured-data'
 import { getAllPosts } from '@/lib/posts'
 
 export default function HomePage() {
@@ -9,6 +10,7 @@ export default function HomePage() {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <SiteStructuredData posts={posts} />
       <SiteHeader />
 
       <main className="mx-auto w-full max-w-3xl flex-1 px-6">

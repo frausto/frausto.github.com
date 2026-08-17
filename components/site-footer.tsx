@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border">
@@ -12,9 +10,22 @@ export function SiteFooter() {
           >
             Email
           </a>
-          <Link href="https://www.linkedin.com/in/nolanfrausto" className="transition-colors hover:text-accent">
+          {/* rel="me" ties the profile back to this site for identity
+              verification, and mirrors the sameAs in the JSON-LD. */}
+          <a
+            href="https://www.linkedin.com/in/nolanfrausto"
+            rel="me noopener"
+            className="transition-colors hover:text-accent"
+          >
             LinkedIn
-          </Link>
+          </a>
+          <a
+            href="/feed.xml"
+            type="application/rss+xml"
+            className="transition-colors hover:text-accent"
+          >
+            RSS
+          </a>
         </div>
       </div>
     </footer>
