@@ -28,7 +28,7 @@ The feature goes to production in record time.
 
 A day later, we roll it back.
 
-Several events are missing. Important data is not being populated. There is a duplicate-record bug that can allow someone to create multiple accounts, and even if it had gone out, we learn that the feature was not even what was envisioned by the key stakeholders at conception.
+Several events are missing. Important data is not being populated. There is a duplicate-record bug that can allow someone to create multiple accounts, and even if it had gone out, we learn that the feature was not actually what was envisioned by the key stakeholders at conception.
 
 The next two weeks are spent triaging, level-setting, and trying to figure out what happened.
 
@@ -36,7 +36,7 @@ Meetings are scheduled. Requirements are clarified. Ownership is debated. Tests 
 
 Eventually, we ship the feature again. But now it has taken much longer than it should have. Multiple stakeholders are frustrated. The team has lost some trust in the process and in each other.
 
-Still, every individual step appeared to move faster.
+Still, from the outset, every individual step appeared to move faster.
 
 ## **The AI Slop Spiral**
 
@@ -52,11 +52,9 @@ A twelve-page PRD gives the appearance of rigor. The corresponding technical spe
 
 We live in a world now where none of those things mean that anybody understands what is being built. More to the point, none of this means that at any point did the team have a shared understanding of the work being done and its impact area.
 
-An AI product requirement document begets → AI technical specification begets → AI acceptance criteria begets → AI-generated code begets → AI code review begets → AI testing. It is a game of AI telephone between teams and their AI tools, where context and shared understanding are lost at every step.
+An AI product requirement document begets → AI technical specification begets → AI acceptance criteria begets → AI-generated code begets → AI code review begets → AI testing. It is a game of telephone played between teams, with AI participating at every step. Context is compressed, transformed, expanded, and then transformed again. Each new artifact looks more complete than the one before it, but shared understanding is lost along the way.
 
 I call this **The AI Slop Spiral.**
-
-It is a game of telephone played between teams, with AI participating at every step. Context is compressed, transformed, expanded, and then transformed again. Each new artifact looks more complete than the one before it, but shared understanding is lost along the way.
 
 ## **Artificial Confidence**
 
@@ -68,9 +66,11 @@ The more polished the output looks, the less likely someone is to challenge it. 
 
 So people skim it. I skim it. I get so much of it lately, I’d be doing nothing but reviewing documentation and code all day if I didn’t. Then we ask AI whether the document is complete, and AI, being very good at evaluating documents as documents, tells us that it is.
 
-This creates a kind of artificial confidence throughout the entire organization. The PM assumes engineering understands the requirements because the PRD is detailed. Engineering assumes the requirements are settled because the PRD was approved. QA assumes the expected behavior is correct because it was extracted from the PRD. Leadership assumes the process is working because output has increased and tickets are moving faster. We’re all aiming for a 100% productivity increase through AI, so we need to show results, and any back and forth between humans becomes messy and slow.
+This creates a kind of artificial confidence throughout the organization. The PM assumes engineering understands the requirements because the PRD is detailed. Engineering assumes the requirements are settled because the PRD was approved. QA assumes the expected behavior is correct because it was pulled from the PRD. Leadership assumes the process is working because output is up and tickets are moving faster. 
 
-Everyone is locally correct. And even meetings are had, and everyone agrees that the documentation makes sense and we are good to move forward. Because AI told them it was. Everyone can point to the document they created.
+We are all supposed to be getting a 100 percent productivity increase from AI, so we need to show results. Any back-and-forth between humans starts to look messy and slow. 
+
+Everyone is locally correct. Sometimes we even have the meetings. Everyone walks through the documentation, agrees that it makes sense, and says we are ready to move forward. Because AI told us it was good. Everyone can point to the document they created.
 
 Instead the project fails and the organization has produced a perfect record of nobody understanding the whole thing.
 
@@ -108,11 +108,11 @@ We are also creative, intelligent, adaptable, and incredible. But given the choi
 
 Better yet, the laziness is often mandated by the company. We are not skipping the hard work. We are “leveraging AI.” We’ve been told non-stop that we need to be at the forefront of AI usage. This is a win-win.
 
-Except the feature does not work. Or it works in the happy path but quietly corrupts data. Or it launches in two days and takes the next month to stabilize. Or six months later, nobody understands the generated system well enough to safely change it, and what was generated made what could have been a simple solution exponentially complex.
+Except the feature does not work. Or it works in the happy path but quietly corrupts data. Or it launches in two days and takes the next month to stabilize. Or six months later, nobody understands the generated system well enough to safely change it, and what was once a simple solution has become exponentially more complex.
 
 The problem is not that AI wrote the code or the document. The problem is that a person accepted responsibility for something they did not understand.
 
-Recently, I started asking people to walk me through the documents they send me. Whether that's a PRD, or code, or a testing plan.  Get in a meeting with me and walk me through it, not async. Talk it over as a team. Make sure the shared understanding is not implicit but explicit and make sure AI is not involved in at least that part of the process. And every single time, we find something important.
+Recently, I started asking people to walk me through the documents that they send my way. Whether that's a PRD, or code, a testing plan, or something else. Get in a meeting with me and walk me through it, non-async. Talk it over as a team. Make sure the shared understanding is not implicit but explicit and make sure AI is not involved in at least that part of the process. And every single time, we find something important.
 
 Sometimes the author cannot explain a section. Sometimes they clearly did not read all of it or really understand every piece written. Sometimes the document says something they do not agree with. Sometimes two people have been using the same words while imagining entirely different behavior.
 
@@ -120,11 +120,11 @@ It’s been wild.
 
 ## **AI Is Not the Enemy**
 
-I know this whole thing can make me seem like an old man yelling at clouds that things aren't the way they used to be. Let me be clear, I am not anti-AI. Quite the opposite, **I am pro-AI**
+I know this whole thing may make me sound like an old man yelling at clouds about how things aren’t what they used to be. Let me be clear: I am not anti-AI. Quite the opposite. **I am pro-AI.** Case in point: I used AI to edit this very blog post. The important word there is *edit*. I wrote the initial version myself and had AI clean it up afterward.
 
 AI is a world-changing technology. It is an extraordinarily powerful tool, and I use it constantly. I want my teams to use it. I expect it to become a normal part of nearly every technical and creative workflow.
 
-But it is not a magic wand. And even when building shared context systems that teams can work off of for every project so that theoretically nothing gets lost and we are all operating under the same context models, we end up losing context through laziness, hallucination, contradictions, or any number of things we are still solving.
+But it is not a magic wand. Even when we build AI-forward shared context systems for teams to use on every project, such that theoretically nothing gets lost and we are all operating under the same context models, we end up losing context through laziness, AI hallucinations, documents contradictions, and there are any number of other ways information gets distorted or quietly dropped along the way. We are still figuring out how to solve that.
 
 ## **So What Do We Do?**
 
@@ -136,8 +136,12 @@ As I mentioned earlier, I have started with something simple: if you hand someth
 
 A PRD, a technical specification, a testing plan, or a meaningful piece of code. Walk the other people through it. Talk about it together. Let them interrupt. Let them ask the questions. Discover that three people have three different definitions of the same sentence. Realize what has been written coherently, actually makes no sense and no one actually knows what it means.
 
-At the same time, sometimes in life the problem can be the solution. As technology continues to evolve, as we learn into the ways AI affects scalability and organizational change, we may learn the best way in which to leverage it at scale. 
+At the same time, in life, sometimes the problem can be the solution. As technology continues to evolve, as we learn into the ways AI affects scalability and organizational efficiencies, we may optimize the best way in which to leverage it at scale. 
 
-My team is continuing to build out our internal MCP server and systems in order to double down on making sure context is shared and understood, across projects, across teams, and across tools. We are trying to both understand and build a human-using-AI version of those same guardrails and harnesses we use to make AI perform its best. 
+Perhaps traditional role segmentation makes less sense in a world where AI is doing more of the work. If handoffs and the loss of shared context are a problem, why have so many handoff points? In theory, one or two people could use AI to act as the PM, engineer, and QA, maintaining the full context from the idea through implementation and validation. That kind of end-to-end ownership has historically been a startup superpower. The question is whether AI now makes it possible at a larger scale.
 
-In the big scheme of things this technology is in its early phases. There will be growing pains in a variety of ways. In the same way that the internet completely changed the way we work, but it happened well after the technology solidified, technology changes can happen fast, but human ones happen more slowly. You can fight that concept, or accept some portion of that truth in reality and optimize your team,your processes, and your systems for it while looking towards a better and brighter future.
+In the meantime, my team is continuing to build out an internal MCP server and the surrounding systems, with the goal of making sure context is shared and understood across projects, teams, and tools. We are trying to build a human version of the same guardrails and harnesses we use to make AI perform well: reliable context, clear boundaries, useful tools, and some way to verify that the system is operating on the right information.
+
+In the big scheme of things, this technology is still in its early stages. There will be growing pains, and they will show up in all kinds of ways. The internet completely changed how we work, but the deeper organizational changes came well after the technology itself had matured. Technology can change quickly. People and organizations change much more slowly. You can fight that reality, or accept it and optimize your teams, processes, and systems around it while working toward a better and brighter future. 
+
+Or at least a less sloppy one.
