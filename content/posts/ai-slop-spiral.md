@@ -16,13 +16,13 @@ At a surface level, they all seem smart and comprehensive, and it gives the conf
 
 I pull up the latest PRD. It is long, however, and I have a growing pile to get through, not to mention all the other tasks on my plate. I put it into AI and ask for a summary, risks, and priorities. Once I get the response, I then take the time to roughly conceptualize the project in my head and ask a few questions and validate several assumptions. AI assures me that the requirements are clear and the important specifics have been accounted for, so I sign-off with a few notes that someone downstream should validate certain implementation details.
 
-The PRD is asynchronously handed off to engineering. Engineering uses AI to turn it into a technical plan. QA runs it through AI to generate acceptance criteria. 
+The PRD is asynchronously handed off to engineering and design. Design uses AI to build out assets and mockups. Engineering uses AI to turn it into a technical plan. QA runs it through AI to generate acceptance criteria. 
 
 Work is underway.
 
 Faster than ever, a pull request comes in, the code is done. Copilot has already reviewed it and left a series of notes about error handling, naming, and possible edge cases. After some back and forth with a few coding agents, the code gets the approval of AI and another real human engineer and it moves to testing.
 
-QA uses AI to help validate the implementation against the acceptance criteria that AI generated from the AI generated PRD that AI distilled from someone higher-up’s AI stream of conscious notes. The PM signs off. QA signs off. Both are real humans.
+QA uses AI to help validate the implementation against the acceptance criteria that AI generated from the AI generated PRD and design that AI distilled from someone higher-up’s AI stream of conscious notes. The PM signs off. Design signs off. QA signs off. All are real humans.
 
 The feature goes to production in record time.
 
@@ -32,7 +32,7 @@ Several events are missing. Important data is not being populated. There is a du
 
 The next two weeks are spent triaging, level-setting, and trying to figure out what happened.
 
-Meetings are scheduled. Requirements are clarified. Ownership is debated. Tests are added. The team goes back through the original documents and discovers that some things were never specified, other things were technically specified but interpreted differently, and a few critical assumptions existed only in someone’s head or not at all.
+Meetings are scheduled. Requirements are clarified. Ownership is debated. Tests are added. The team goes back through the original documents and assets, and discovers that some things were never specified, other things were technically specified but interpreted differently, and a few critical assumptions existed only in someone’s head or not at all.
 
 Eventually, we ship the feature again. But now it has taken much longer than it should have. Multiple stakeholders are frustrated. The team has lost some trust in the process and in each other.
 
@@ -48,11 +48,11 @@ It is an enormously powerful tool. It allows people to write, research, analyze,
 
 But AI has also made it much easier not to think. Worse, it has made it possible **not to think while producing something that looks very much like thinking**.
 
-A twelve-page PRD gives the appearance of rigor. The corresponding technical specification is filled with jargon and detail that exudes understanding. Forty acceptance criteria look like comprehensive and well-thought coverage. A pull request with dozens of comments and several follow-on commits looks like a careful review.
+A twelve-page PRD gives the appearance of rigor. The corresponding technical specification is filled with jargon and detail that exudes understanding. A set of polished mockups makes it look like the user experience has been carefully considered. Forty acceptance criteria look like comprehensive and well-thought coverage. A pull request with dozens of comments and several follow-on commits looks like a careful review.
 
 We live in a world now where none of those things mean that anybody understands what is being built. More to the point, none of this means that at any point did the team have a shared understanding of the work being done and its impact area.
 
-An AI product requirement document begets → AI technical specification begets → AI acceptance criteria begets → AI-generated code begets → AI code review begets → AI testing. It is a game of telephone played between teams, with AI participating at every step. Context is compressed, transformed, expanded, and then transformed again. Each new artifact looks more complete than the one before it, but shared understanding is lost along the way.
+An AI product requirement document begets → AI mockups and assets begets → AI technical specification begets → AI acceptance criteria begets → AI-generated code begets → AI code review begets → AI testing. It is a game of telephone played between teams, with AI participating at every step. Context is compressed, transformed, expanded, and then transformed again. Each new artifact looks more complete than the one before it, but shared understanding is lost along the way.
 
 I call this **The AI Slop Spiral.**
 
@@ -140,7 +140,7 @@ A PRD, a technical specification, a testing plan, or a meaningful piece of code.
 
 At the same time, in life, sometimes the problem can be the solution. As technology continues to evolve, as we learn into the ways AI affects scalability and organizational efficiencies, we may optimize the best way in which to leverage it at scale. 
 
-Perhaps traditional role segmentation makes less sense in a world where AI is doing more of the work. If handoffs and the loss of shared context are a problem, why have so many handoff points? In theory, one or two people could use AI to act as the PM, engineer, and QA, maintaining the full context from the idea through implementation and validation. That kind of end-to-end ownership has historically been a startup superpower. The question is whether AI now makes it possible at a larger scale.
+Perhaps traditional role segmentation makes less sense in a world where AI is doing more of the work. If handoffs and the loss of shared context are a problem, why have so many handoff points? In theory, one or two people could use AI to act as the PM, designer, engineer, and QA, maintaining the full context from the idea through implementation and validation. That kind of end-to-end ownership has historically been a startup superpower. The question is whether AI now makes it possible at a larger scale.
 
 In the meantime, my team is continuing to build out an internal MCP server and the surrounding systems, with the goal of making sure context is shared and understood across projects, teams, and tools. We are trying to build a human version of the same guardrails and harnesses we use to make AI perform well: reliable context, clear boundaries, useful tools, and some way to verify that the system is operating on the right information.
 
