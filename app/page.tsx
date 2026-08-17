@@ -23,7 +23,7 @@ export default function HomePage() {
             <span className="text-accent">Meaning</span>.
           </h1>
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            Trying to figure out how to pursue a better life without confusing ambition with worth, or progress with purpose. Thoughts on technology, work, people, and life, while trying to become more thoughtful, more forgiving, and more fully myself.
+            Trying to figure out how to pursue a better life without confusing ambition with worth, or progress with purpose. Thoughts on technology, work, people, whimsy, and life.
 
           </p>
         </section>
