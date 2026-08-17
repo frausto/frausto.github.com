@@ -24,6 +24,19 @@ export async function generateMetadata({
   return {
     title: `${post.title} — On Resonance`,
     description: post.excerpt,
+    // The image itself comes from opengraph-image.tsx in this folder.
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.excerpt,
+      url: `/posts/${slug}/`,
+      publishedTime: post.date,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+    },
   }
 }
 

@@ -18,11 +18,30 @@ const fraunces = Fraunces({
   display: 'swap',
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nolanfrausto.com'
+
 export const metadata: Metadata = {
+  // Social crawlers need absolute URLs; this makes Next resolve the generated
+  // opengraph-image files against the live domain.
+  metadataBase: new URL(siteUrl),
   title: 'On Resonance — Engineering, tech & life',
   description:
     'A personal blog about the craft of engineering, tech work, personal philosophy, and life.',
   generator: 'v0.app',
+  openGraph: {
+    type: 'website',
+    siteName: 'On Resonance',
+    url: '/',
+    title: 'On Resonance — Engineering, tech & life',
+    description:
+      'A personal blog about the craft of engineering, tech work, personal philosophy, and life.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'On Resonance — Engineering, tech & life',
+    description:
+      'A personal blog about the craft of engineering, tech work, personal philosophy, and life.',
+  },
   icons: {
     icon: [
       {
