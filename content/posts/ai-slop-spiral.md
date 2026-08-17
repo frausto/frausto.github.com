@@ -1,6 +1,6 @@
 ---
 title: "The AI Slop Spiral"
-date: "2026-08-17"
+date: "2026-08-18"
 excerpt: "AI is an incredibly powerful tool, but it also makes it easy not to think while producing something that looks very much like thinking. The result is faster output, worse handoffs, and an organizational process that slowly spirals into slop."
 ---
 
@@ -120,7 +120,7 @@ It’s been wild.
 
 ## **AI Is Not the Enemy**
 
-I know this whole thing may make me sound like an old man yelling at clouds about how things aren’t what they used to be. Let me be clear: I am not anti-AI. Quite the opposite. **I am pro-AI.** Case in point: I used AI to edit this very blog post. The important word there is *edit*. I wrote the initial version myself and had AI clean it up afterward.
+I know this whole thing may make me sound like an old man yelling at clouds about how things aren’t what they used to be. Let me be clear: I am not anti-AI. Quite the opposite. **I am pro-AI.** Case in point: I used AI to edit this very blog post. The important word there is *edit*. I wrote the initial version myself and had AI clean it up afterward, and I edited it again after that. I'm still figuring out how to best leverage it with writing, but I figured it was a meaningful exercise to undertake when writing this specific post. 
 
 AI is a world-changing technology. It is an extraordinarily powerful tool, and I use it constantly. I want my teams to use it. I expect it to become a normal part of nearly every technical and creative workflow.
 
