@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { Markdown } from '@/components/markdown'
+import { SubscribeForm } from '@/components/subscribe-form'
 import { getAllSlugs, getPostBySlug } from '@/lib/posts'
 import { formatDate } from '@/lib/format-date'
 
@@ -75,6 +76,8 @@ export default async function PostPage({
             <Markdown content={post.content} />
           </div>
         </article>
+
+        <SubscribeForm />
       </main>
 
       <SiteFooter />

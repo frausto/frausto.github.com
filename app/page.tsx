@@ -1,6 +1,7 @@
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { PostList } from '@/components/post-list'
+import { SubscribeForm } from '@/components/subscribe-form'
 import { getAllPosts } from '@/lib/posts'
 
 export default function HomePage() {
@@ -76,6 +77,8 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+
+        <SubscribeForm />
       </main>
 
       <SiteFooter />
