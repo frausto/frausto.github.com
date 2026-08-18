@@ -9,7 +9,7 @@ import { SubscribeForm } from '@/components/subscribe-form'
 import { PostStructuredData } from '@/components/structured-data'
 import { getAllSlugs, getPostBySlug } from '@/lib/posts'
 import { formatDate } from '@/lib/format-date'
-import { absoluteUrl, author, feedAlternates, site } from '@/lib/site'
+import { absoluteUrl, author, feedAlternates, ogImage, site } from '@/lib/site'
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -33,7 +33,6 @@ export async function generateMetadata({
     ...(post.tags.length ? { keywords: post.tags } : {}),
     authors: [{ name: author.name, url: absoluteUrl('/') }],
     alternates: { canonical: url, types: feedAlternates() },
-    // The image itself comes from opengraph-image.tsx in this folder.
     openGraph: {
       type: 'article',
       siteName: site.name,
@@ -45,11 +44,15 @@ export async function generateMetadata({
       modifiedTime: post.updated,
       authors: [author.name],
       ...(post.tags.length ? { tags: post.tags } : {}),
+      // Rendered by opengraph-image.tsx in this folder, renamed to *.png by
+      // scripts/postbuild-og.mjs.
+      images: ogImage(url),
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
+      images: ogImage(url),
     },
   }
 }

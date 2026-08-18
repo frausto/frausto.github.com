@@ -2,7 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter, Fraunces } from 'next/font/google'
 import Script from 'next/script'
-import { absoluteUrl, author, feedAlternates, site, siteUrl } from '@/lib/site'
+import { absoluteUrl, author, feedAlternates, ogImage, site, siteUrl } from '@/lib/site'
 import './globals.css'
 
 const GA_MEASUREMENT_ID = 'G-YXBKRPVF4V'
@@ -57,11 +57,13 @@ export const metadata: Metadata = {
     locale: site.locale,
     title: site.title,
     description: site.description,
+    images: ogImage('/'),
   },
   twitter: {
     card: 'summary_large_image',
     title: site.title,
     description: site.description,
+    images: ogImage('/'),
   },
   icons: {
     icon: [

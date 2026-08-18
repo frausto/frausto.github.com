@@ -88,7 +88,7 @@ So the direction comes down from the top:
 
 These instructions are usually vague because no one actually knows what the correct implementation looks like. If they did, the instruction would be more useful. It would identify which work benefits from AI, which work requires direct human judgment, what success looks like, and what failure modes should be measured.
 
-Instead, AI usage itself becomes the goal.
+**Instead, AI usage itself becomes the goal.**
 
 This is encouraged by the marketing coming from AI companies, consultants, investors, and executives who do not have to live inside the daily reality of making these systems work.
 

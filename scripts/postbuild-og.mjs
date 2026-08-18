@@ -1,9 +1,15 @@
 // Next writes generated metadata images to extension-less files
 // (out/posts/<slug>/opengraph-image). GitHub Pages then serves them as
 // application/octet-stream, which stops Twitter/Slack/LinkedIn from rendering
-// the preview. This renames them to *.png and points the meta tags at the new
-// name (also dropping Next's cache-busting query, which a static host ignores).
-import { copyFile, readdir, readFile, rename, writeFile } from 'fs/promises'
+// the preview, so this renames them to *.png.
+//
+// The HTML is deliberately left alone. Next inlines the RSC payload into every
+// page as length-prefixed rows (`10:T8b3,<2227 bytes>`), so editing any string
+// in the markup desynchronises those byte counts and React aborts hydration
+// with "Connection closed" — the page renders, then swaps itself for the
+// "This page couldn't load" error screen. The URLs are set to their final
+// `.png` names at build time instead, via `ogImage()` in lib/site.ts.
+import { copyFile, readdir, rename } from 'fs/promises'
 import path from 'path'
 
 const outDir = path.join(process.cwd(), 'out')
@@ -30,18 +36,8 @@ for (const file of files) {
   renamed += 1
 }
 
-let patched = 0
 if (renamed === 0) {
   console.log('postbuild-og: no generated social images found, skipping rename')
-} else {
-  for (const file of files.filter((f) => f.endsWith('.html'))) {
-    const html = await readFile(file, 'utf8')
-    const next = html.replace(/(opengraph-image|twitter-image)(\?[a-zA-Z0-9]+)?/g, '$1.png')
-    if (next !== html) {
-      await writeFile(file, next)
-      patched += 1
-    }
-  }
 }
 
 // Publish each post's markdown source at /posts/<slug>.md. AI crawlers and
@@ -53,6 +49,6 @@ for (const file of postFiles) {
 }
 
 console.log(
-  `postbuild-og: renamed ${renamed} image(s), updated ${patched} HTML file(s), ` +
+  `postbuild-og: renamed ${renamed} image(s), ` +
     `published ${postFiles.length} markdown source(s)`
 )
