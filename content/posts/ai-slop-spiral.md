@@ -52,7 +52,7 @@ A twelve-page PRD gives the appearance of rigor. The corresponding technical spe
 
 We live in a world now where none of those things mean that anybody understands what is being built. More to the point, none of this means that at any point did the team have a shared understanding of the work being done and its impact area.
 
-An AI product requirement document begets → AI mockups and assets begets → AI technical specification begets → AI acceptance criteria begets → AI-generated code begets → AI code review begets → AI testing. It is a game of telephone played between teams, with AI participating at every step. Context is compressed, transformed, expanded, and then transformed again. Each new artifact looks more complete than the one before it, but shared understanding is lost along the way.
+An AI product requirement document begets → AI mockups and assets begets → AI technical specification begets → AI acceptance criteria begets → AI-generated code begets → AI code review begets → AI testing. It is a game of telephone played between teams and within teams, with AI participating at every step. Context is compressed, transformed, expanded, and then transformed again, and shared understanding is lost along the way.
 
 I call this **The AI Slop Spiral.**
 
