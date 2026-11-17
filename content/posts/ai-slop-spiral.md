@@ -6,13 +6,13 @@ excerpt: "AI is an incredibly powerful tool, but it also makes it easy not to th
 
 I squint at my monitor, the brightness is set too high. A dying lamp hums faintly in the background, interrupted only by the click of the mouse wheel. At least this document is only twelve pages.
 
-It is the seventh document I have received today. A steady stream of PRDs, technical specifications, incident reports, and QA testing plans. Each one looks impressive giving confidence that the organizational engine continues to churn. Work continues moving through the machine.
+It is the seventh document I have received today. A steady stream of PRDs, technical specifications, incident reports, and QA testing plans. Each one looks impressive, giving me confidence that the organizational engine continues to churn. Work continues moving through the machine.
 
 I put the latest PRD into AI and ask for a summary, risks, and priorities. I sketch out the project in my head, ask a few questions, and sign off with notes about what someone downstream should validate.
 
 The PRD is asynchronously handed off to engineering and design. Design uses AI to build out assets and mockups. Engineering uses AI to turn it into a technical plan. QA runs it through AI to generate acceptance criteria. 
 
-Work is underway. The feature goes to production in record time. A day later, we roll it back.
+Work is underway and the feature goes to production in record time. A day later, we roll it back.
 
 Several events are missing. Important data isn't being populated. A duplicate-record bug lets people create multiple accounts. And the feature itself is different from what the stakeholders had envisioned.
 
@@ -56,7 +56,7 @@ Nobody wants to find out that a competitor has discovered some magical new way o
 
 AI usage itself becomes the goal.
 
-We can see how long it took to generate and close a ticket. The cost of two weeks spent figuring out what we meant in the first place lands somewhere else. Then we wonder why productivity feels worse while every productivity metric is improving.
+The cost of two weeks spent figuring out what we meant in the first place lands somewhere else. Then we wonder why productivity feels worse while every productivity metric is improving.
 
 This drive is encouraged by the marketing coming from AI companies, consultants, investors, and executives who do not have to live inside the daily reality of making these systems work.
 
@@ -70,11 +70,11 @@ AI is very good at helping us maintain that illusion.
 
 ## **AI Is Not the Enemy**
 
-I know this whole thing may make me sound like an old man yelling at clouds about how things aren't what they used to be. Let me be clear: I am not anti-AI. Quite the opposite. **I am pro-AI.** I used AI to edit this very blog post. The important word there is *edit*. I wrote the initial version myself and had AI clean it up afterward, and I edited it again after that. I'm still figuring out how to best leverage it with writing, but I figured it was a meaningful exercise to undertake when writing this specific post. 
+I know this whole thing may make me sound like an old man yelling at clouds about how things aren't what they used to be. Let me be clear: **I am pro-AI.** I used AI to edit this very blog post. The important word there is *edit*. I wrote the initial version myself and had AI clean it up afterward, and I edited it again after that. I'm still figuring out how to best leverage it with writing, but I figured it was a meaningful exercise to undertake when writing this specific post. 
 
 AI is a world-changing technology. It is an extraordinarily powerful tool, and I use it constantly. I want my teams to use it. I'm building tools for my teams to use it even more to better effect. I expect it to become a normal part of nearly every technical and creative workflow.
 
-Even as it stands, my examples in this post aside, it has generally been a huge net positive. But, as they say, with great power comes great responsibility. Anything with this much potential for change is going to come with a period of adjustment, along with new problems created by the change itself.
+As they say, with great power comes great responsibility. Anything with this much potential for change is going to come with a period of adjustment, along with new problems created by the change itself.
 
 Banning AI would be both unrealistic and stupid. But I do think we need to step back and become much more honest about what it is doing to our organizations.
 
